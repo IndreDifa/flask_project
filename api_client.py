@@ -19,8 +19,26 @@ def add_user(name, email):
     return response.json()
 
 if __name__ == "__main__":
-    print("Visi vartotojai:", get_users())
-    print("Vartotojas ID 1:", get_user(1))
-    new_user = add_user("Mantas", "mantas@example.com")
-    print("Pridėtas vartotojas:", new_user)
-    print("Atnaujintas vartotojų sąrašas:", get_users())
+    print("Klientas paleistas")
+
+    try:
+        print("Visi vartotojai:", get_users())
+    except Exception as e:
+        print("Klaida gaunant visus vartotojus:", e)
+
+    try:
+        print("Vartotojas ID 1:", get_user(1))
+    except Exception as e:
+        print("Klaida gaunant vartotoją ID 1:", e)
+
+    try:
+        new_user = add_user("Petras", "petras@example.com")
+        print("Pridėtas vartotojas:", new_user)
+    except Exception as e:
+        print("Klaida pridedant vartotoją:", e)
+
+    try:
+        print("Atnaujintas vartotojų sąrašas:", get_users())
+    except Exception as e:
+        print("Klaida gaunant atnaujintą sąrašą:", e)
+
