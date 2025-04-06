@@ -1,7 +1,8 @@
 import requests
 import os
 
-BASE_URL = os.getenv("BASE_URL", "http://localhost:5000")
+BASE_URL = "http://ip172-18-0-32-abcdefgh.direct.labs.play-with-docker.com"
+
 
 def get_users():
     response = requests.get(f"{BASE_URL}/users")
