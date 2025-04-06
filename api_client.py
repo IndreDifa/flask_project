@@ -1,7 +1,7 @@
 import requests
 import os
 
-BASE_URL = "http://ip172-18-0-32-abcdefgh.direct.labs.play-with-docker.com"
+BASE_URL = "http://ip172-18-0-74-cvp3hi0l2o9000cd4au0-5000.direct.labs.play-with-docker.com/"
 
 
 def get_users():
