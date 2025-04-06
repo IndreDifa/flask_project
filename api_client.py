@@ -1,7 +1,6 @@
 import requests
 import os
 
-print("Klientas paleistas")
 
 BASE_URL = "http://ip172-18-0-6-cvp77m291nsg0096ppg0-5000.direct.labs.play-with-docker.com"
 
